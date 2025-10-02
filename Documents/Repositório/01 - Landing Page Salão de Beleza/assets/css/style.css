@@ -54,6 +54,12 @@ h6 {
     background-color: #e86786;
 }
 
+.section-img {
+    height: 500px;
+    background-color: #e86786;
+    padding-top: 3rem;
+}
+
 
 .header-intro {
     padding-top: 6rem;
@@ -119,10 +125,36 @@ h6 {
     text-align: justify;
 }
 
+.header-content-job {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content-job .h3-header {
+    max-width: 80%;
+    padding: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.header-content-job .h3-header h3{
+    font-size: 3rem;
+}
+
 .btn-content {
     display: flex;
     justify-content: center;
     padding-top: 3rem;
+}
+
+.btn-content-job {
+    display: flex;
+    justify-content: left;
+    padding-top: 2rem;
+}
+
+.first {
+    padding-top: 0.7rem;
 }
 
 .btn-content button {
@@ -131,7 +163,24 @@ h6 {
     width: 30rem;
     height: 3rem;
     font-size: 1.5rem;
-    box-shadow: 1px 1px 5px 5px #00000030;
+    border-style: none;
+    /* box-shadow: 1px 1px 5px 5px #00000030; */
+}
+
+.btn-content-job .button-job {
+    background-color: #ffd2cb;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 5rem;
+    border-style: none;
+    font-size: 1.5rem;
+    /* box-shadow: 1px 1px 5px 5px #00000030; */
+}
+
+.button-job::after {
+    content: "→";
+    padding-left: 1rem;
+    font-size: 2rem;
 }
 
 .job-content {
@@ -149,8 +198,26 @@ h6 {
 .box-job {
     background-color: #96b5ad;
     padding: 2rem;
-    border-radius: 2rem;
     height: 15rem;
+}
+
+.box-job-img {
+    display: flex;
+    background-color: #96b5ad;
+    padding: 2rem;
+    height: max-content;
+    justify-content: center;
+}
+
+.job-img {
+    max-height: 39.7rem;
+    max-width: 31.7rem;
+}
+
+.job-img img {
+    max-height: 39.7rem;
+    max-width: 31.7rem;
+    box-shadow: 0px 0px 0px 3px  #000000;
 }
 
 /* .btn-job button {
