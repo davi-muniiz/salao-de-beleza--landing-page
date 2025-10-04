@@ -220,6 +220,31 @@ h6 {
     box-shadow: 0px 0px 0px 3px  #000000;
 }
 
-/* .btn-job button {
-    
-} */
+.grid-salao {
+    display: grid;
+    padding-top: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.grid-salao .text-img-salao p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 0.5rem;
+}
+
+.grid-salao .img-salao {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.grid-salao .img-salao img {
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+}
+
+.grid-salao .text-img-salao p strong {
+    text-decoration-line: underline;
+}
