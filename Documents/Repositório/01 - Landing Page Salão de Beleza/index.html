@@ -9,31 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+     <input id="close-menu" class="close-menu" type="checkbox" role="button" aria-label="Close Menu">
+        <label class="close-menu-label" for="close-menu" title="Close Menu"></label>
+
     <div class="menu-line">
         <h4>Lumina</h4>
-        <input id="close-menu" class="close-menu" type="checkbox" role="button" aria-label="Close Menu">
-        <label class="close-menu-label" for="close-menu" title="Close Menu"></label>
+       
     </div>
 
     <div class="menu-spacing"></div>
 
     <aside class="menu">
         <div class="main-content menu-content">
-            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#">Salão de Beleza</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">Salão Lumina</a></h1>
+            <nav class="menu-open">
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Serviços">Serviços</a></li>
+                    <li><a href="#Equipe">Equipe</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul onclick="getElementById('close-menu').checked = false;">
-                <li><a href="">Home</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Equipe</a></li>
-            </ul>
-        </nav>
+        
     </aside>
 
-    <section class="section">
+    <section class="section" id="home">
         <div class="header-intro">
             <h2>Boas Vindas ao Salão Lumina</h2>
         </div>
@@ -65,7 +71,7 @@
         </div>
     </section>
 
-    <section class="section servicos">
+    <section id="Serviços" class="section servicos">
         <div class="content">
             <div class="header-content-job">
                 <div class="h3-header">
@@ -110,7 +116,7 @@
         <img src="media/images/4.jpg" alt="">
     </section>
 
-    <section class="section salao" style="background-color: #f4a1b5;">
+    <section id="Equipe" class="section-salao" style="background-color: #f4a1b5;">
         <div class="main-content">
             <div class="grid-salao">
                 <div class="img-salao"><img src="media/images/5.jpg" alt=""></div>
@@ -124,10 +130,43 @@
                     </p>
                 </div>     
             </div>
-            
-
         </div>
     </section>
 
+    <section class="section">
+        <div class="contact">
+            <div class="grid-fotos">
+                <img src="media/images/7.jpg" alt="" class="1">
+                <img src="media/images/8.jpg" alt="" class="2">
+                <img src="media/images/9.jpg" alt="" class="3">
+                <img src="media/images/10.jpg" alt="" class="4">
+            </div>
+            <div class="letreiro-fotos">
+                <p>A gente se vê em breve!</p>
+            </div>
+            <div class="fotos-button">
+                <button type="submit">→ Marcar Horário</button>
+            </div>
+            <div class="informacoes-fotos">
+                <h5>FUNCIONAMENTO</h5>
+                <div class="days">
+                    <p>Seg: FECHADO</p>
+                    <p>Ter a dom: das 9h às 19h</p>
+                    <p>Sáb e dom: das 10h às 19h</p>
+                </div>
+                <div class="adress">
+                    <p>Rua Exemplo 123</p>
+                    <p>(13) 99999-9999</p>
+                    <p>Cidade Exemplo, SP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="whomadeit">
+            <p>Feito com <strong>❤</strong> por <a href="https://www.instagram.com/davimuniiz_/">Davi Muniz</a></p>
+        </div>
+    </footer>
 </body>
 </html>
